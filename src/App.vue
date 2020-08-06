@@ -38,7 +38,7 @@
       </v-menu>
     </v-app-bar>
     <v-main class="pa-0 yellow-showad">
-      <v-carousel cycle height="100vh" hide-delimiter-background show-arrows-on-hover vertical-delimiters="right">
+      <v-carousel cycle height="100vh" hide-delimiter-background show-arrows-on-hover id="home">
         <v-carousel-item v-for="(item, i) of carouselList" :key="i" :src="item['background-image']" tag="div">
           <v-sheet class="d-flex justify-center align-center pa-auto transparent" height="100%">
             <v-img width="100%" max-width="600px" :src="item.src" alt />
@@ -135,6 +135,11 @@
           </v-row>
         </section>
       </v-sheet>
+      <div class="toTop">
+        <span>
+          <v-icon>home</v-icon>
+        </span>
+      </div>
     </v-main>
     <v-footer dark padless>
       <section id="contact">
@@ -227,6 +232,10 @@ export default {
       drawer: false, // Hide mobile side menu by default
       navList: [
         {
+          href: '#home',
+          title: 'HOME',
+        },
+        {
           href: '#company',
           title: 'COMPANY',
         },
@@ -295,5 +304,10 @@ export default {
 <style lang="scss">
 .yellow-showad {
   background-color: #e3dcc9 !important;
+}
+.toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 </style>
