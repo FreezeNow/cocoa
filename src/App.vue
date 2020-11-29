@@ -140,6 +140,223 @@
           <v-icon>home</v-icon>
         </span>
       </div>
+      <div>
+        <v-sheet class="mx-auto d-flex pt-10" color="#EBD0BB" width="901px">
+          <v-sheet class="transparent">
+            <v-sheet class="transparent d-flex align-center px-5" :width="outwidth">
+              <v-sheet class="transparent flex-grow-1" height="896px">
+                <v-sheet
+                  class="transparent d-flex align-center justify-space-around"
+                  style="margin-top:477px"
+                  height="114px"
+                >
+                  <v-sheet
+                    class="text-center d-flex justify-center align-center text-subtitle-1 font-weight-bold text-break"
+                    width="114px"
+                    height="100%"
+                    rounded="circle"
+                    elevation="3"
+                    >{{ en.jinru }}</v-sheet
+                  >
+                  <v-icon style="transform:rotate(45deg)">mdi-arrow-top-right</v-icon>
+                </v-sheet>
+              </v-sheet>
+              <v-sheet class="transparent">
+                <v-sheet class="transparent text-center" width="220px" v-for="(value, index) of en.pre" :key="index">
+                  <v-sheet
+                    class="d-flex justify-center align-center"
+                    width="100%"
+                    height="40px"
+                    rounded="pill"
+                    elevation="3"
+                  >
+                    {{ value }}
+                  </v-sheet>
+                  <v-icon>mdi-chevron-down</v-icon>
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+            <v-sheet class="transparent d-flex align-center" :width="outwidth">
+              <v-sheet class="flex-grow-1 "></v-sheet>
+              <v-sheet
+                class="transparent d-flex align-end justify-center border-dashed px-5 "
+                width="400px"
+                height="400px"
+              >
+                <v-sheet
+                  class="transparent text-center d-flex justify-center align-center text-h6 font-weight-bold text-break"
+                  max-width="10em"
+                  height="100%"
+                  >{{ en.butter.name }}</v-sheet
+                >
+                <v-sheet class="transparent ">
+                  <v-sheet
+                    class="transparent text-center "
+                    width="220px"
+                    v-for="(value, index) of en.butter.list"
+                    :key="index"
+                  >
+                    <v-sheet
+                      class="d-flex justify-center align-center brown--text"
+                      width="100%"
+                      color="#ffe4e1"
+                      height="40px"
+                      rounded="pill"
+                      elevation="3"
+                    >
+                      {{ value }}
+                    </v-sheet>
+                    <v-icon>mdi-chevron-down</v-icon>
+                  </v-sheet>
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+            <v-sheet class="d-flex transparent px-5 py-4" :width="outwidth">
+              <v-spacer></v-spacer>
+              <v-sheet class="transparent d-flex align-center justify-center" width="220px">
+                <v-sheet
+                  class="d-flex align-center justify-center text-subtitle-1 font-weight-bold "
+                  rounded="pill"
+                  width="140px"
+                  height="60px"
+                  elevation="3"
+                  >{{ en.customer }}</v-sheet
+                >
+              </v-sheet>
+            </v-sheet>
+          </v-sheet>
+          <v-sheet class="transparent">
+            <v-sheet class="transparent d-flex align-center ">
+              <v-sheet class="transparent flex-grow-1">
+                <v-sheet
+                  class="transparent d-flex align-center justify-space-around"
+                  style="margin-top:-37px"
+                  width="180px"
+                  height="114px"
+                >
+                  <v-icon style="transform:rotate(-135deg)">mdi-arrow-top-right</v-icon>
+
+                  <v-sheet
+                    class="text-center d-flex justify-center align-center text-subtitle-1 font-weight-bold text-break"
+                    width="114px"
+                    height="100%"
+                    rounded="circle"
+                    elevation="3"
+                    >{{ en.jinru }}</v-sheet
+                  >
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+            <v-sheet class="d-flex transparent px-5 py-4" style="margin-top:380px" :width="outwidth">
+              <v-sheet class="transparent" width="50px"></v-sheet>
+
+              <v-sheet class="transparent d-flex align-center justify-center" width="220px">
+                <v-sheet
+                  class="d-flex align-center justify-center text-subtitle-1 font-weight-bold "
+                  rounded="pill"
+                  width="140px"
+                  height="60px"
+                  elevation="3"
+                >
+                  {{ en.customer }}
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+            <v-sheet class="transparent d-flex align-end" :width="outwidth">
+              <v-sheet class="transparent flex-grow-1 d-flex align-center justify-center" style="margin-bottom:20px">
+                <v-icon style="transform:rotate(45deg)">mdi-arrow-top-right</v-icon>
+              </v-sheet>
+              <v-sheet
+                class="transparent d-flex align-start justify-center border-dashed px-5 "
+                width="400px"
+                :height="en.liquor.list.length * 64 + 16 + 'px'"
+              >
+                <v-sheet class="transparent ">
+                  <v-sheet
+                    class="transparent text-center "
+                    width="220px"
+                    v-for="(value, index) of en.liquor.list"
+                    :key="index"
+                  >
+                    <v-icon>mdi-chevron-up</v-icon>
+
+                    <v-sheet
+                      class="d-flex justify-center align-center brown--text"
+                      width="100%"
+                      height="40px"
+                      color="#ffe4e1"
+                      rounded="pill"
+                      elevation="3"
+                    >
+                      {{ value }}
+                    </v-sheet>
+                  </v-sheet>
+                </v-sheet>
+                <v-sheet
+                  class="transparent text-center d-flex justify-center align-center text-h6 font-weight-bold text-break"
+                  max-width="10em"
+                  height="100%"
+                >
+                  {{ en.liquor.name }}
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+            <v-sheet class="transparent d-flex align-start" :width="outwidth">
+              <v-sheet class="transparent flex-grow-1 d-flex align-center justify-center" style="margin-top:20px">
+                <v-icon style="transform:rotate(45deg)">mdi-arrow-top-right</v-icon>
+              </v-sheet>
+              <v-sheet
+                class="transparent d-flex align-end justify-center border-dashed px-5 "
+                width="400px"
+                :height="en.powder.list.length * 64 + 12 + 'px'"
+              >
+                <v-sheet class="transparent ">
+                  <v-sheet
+                    class="transparent text-center "
+                    width="220px"
+                    v-for="(value, index) of en.powder.list"
+                    :key="index"
+                  >
+                    <v-sheet
+                      class="d-flex justify-center align-center  brown--text"
+                      width="100%"
+                      height="40px"
+                      color="#c59887"
+                      rounded="pill"
+                      elevation="3"
+                    >
+                      {{ value }}
+                    </v-sheet>
+                    <v-icon>mdi-chevron-down</v-icon>
+                  </v-sheet>
+                </v-sheet>
+                <v-sheet
+                  class="transparent text-center d-flex justify-center align-center text-h6 font-weight-bold text-break"
+                  max-width="10em"
+                  height="100%"
+                >
+                  {{ en.powder.name }}
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+            <v-sheet class="d-flex transparent px-5 py-4" :width="outwidth">
+              <v-sheet class="transparent" width="50px"></v-sheet>
+
+              <v-sheet class="transparent d-flex align-center justify-center" width="220px">
+                <v-sheet
+                  class="d-flex align-center justify-center text-subtitle-1 font-weight-bold "
+                  rounded="pill"
+                  width="140px"
+                  height="60px"
+                  elevation="3"
+                >
+                  {{ en.customer }}
+                </v-sheet>
+              </v-sheet>
+            </v-sheet>
+          </v-sheet>
+        </v-sheet>
+      </div>
     </v-main>
     <v-footer dark padless>
       <section id="contact">
@@ -282,6 +499,85 @@ export default {
           ],
         },
       ],
+      en1: {
+        jinru: '关键控制点',
+        customer: '客户',
+        pre: [
+          '原料（可可豆）检测',
+          '原料验检',
+          '存储',
+          '投料',
+          '清杂',
+          '去石',
+          '焙炒',
+          '仁壳分离',
+          '灭菌/碱化',
+          '粗磨',
+          '精磨',
+          '浆料存储',
+          '均质',
+          '压榨',
+        ],
+        liquor: {
+          name: '可可液块加工子流程',
+          list: ['运输','存储入库', '可可液块罐装/打包',  '调温',],
+        },
+        powder: {
+          name: '可可粉加工子流程',
+          list: ['磨粉', '冷却', '可可粉装袋', '存储入库', '运输'],
+        },
+        butter: {
+          name: '可可脂加工子流程',
+          list: ['毛油存储', '压滤', '压冷', '可可脂罐装/打包', '储存入库', '运输'],
+        },
+      },
+
+      en: {
+        jinru: 'CRITICAL CONTROL POINT',
+        customer: 'CUSTOMER',
+        pre: [
+          'PRE-INSPECTION TEST',
+          'COCOA BEAN RECEIPT',
+          'WAREHOUSE/STORAGE',
+          'COCOA BEANS TIPPING',
+          'COCOA BEANS CLEANING',
+          'COCOA BEAN DE-STONING',
+          'COCOA BEANS ROASTING',
+          'COCOA BEANS BREAKING',
+          'STERILIZING/ALKALIZING',
+          'COCOA BEAN WINNOWING',
+          'COCOA NIB GRINDING',
+          'LIQUOR STORAGE',
+          'LIQUOR HOMOGENIZING',
+          'LIQUOR PRESSING',
+        ],
+        liquor: {
+          name: 'COCOA LIQUOR PROCESSING',
+          list: ['LOADING & TRANSPORT', 'WAREHOUSE STORAGE', 'COCOA LIQUOR BAGGING', 'LIQUOR CONDITIONING'],
+        },
+        powder: {
+          name: 'COCOA POWDER PROCESSING',
+          list: [
+            'CAKE PULVERIZING',
+            'POWDER COOLING',
+            'COCOA POWDER BAGGING',
+            'WHAREHOUSE STORAGE',
+            'LOADING & TRANSPORT',
+          ],
+        },
+        butter: {
+          name: 'COCOA BUTTER PROCESSING',
+          list: [
+            'DIRTY BUTTER TANK',
+            'FILTERING',
+            'TEMPERING',
+            'BUTTER FILL/PACKING',
+            'WHAREHOUSE STORAGE',
+            'LOADING & TRANSPORT',
+          ],
+        },
+      },
+      outwidth: '450px',
     };
   },
   methods: {
@@ -302,12 +598,30 @@ export default {
 };
 </script>
 <style lang="scss">
+body {
+  font-size: 14px;
+  .v-application {
+    .border-dashed {
+      border: 1px dashed #555 !important;
+      border-radius: 20px !important;
+    }
+  }
+}
 .yellow-showad {
   background-color: #e3dcc9 !important;
+}
+.brown--text {
+  color: #704214;
 }
 .toTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-16 {
+  font-size: 16px;
 }
 </style>
